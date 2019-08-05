@@ -1,6 +1,8 @@
 import Layout from "../components/MyLayout";
 import Link from "next/link";
 
+export const config = { amp: "hybrid" };
+
 const PostLink = ({ show }) => (
   <li>
     <Link href="/p/[id]" as={`/p/${show.id}`}>
